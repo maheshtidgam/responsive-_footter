@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        footer{
+            max-width: 1300px;
+            min-width: 500px;
+            height: auto;
+            margin: auto;
+        }
+
+        #container{
+            display: flex;
+        }
+
+        #logo{
+            background-color: #01026e;
+        }
+
+        #rightbox{
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+        }
+
+        #rightbox>div{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            background-color: #3140ac;
+            color: white;
+            padding: 20px 0px 20px 35px;
+        }
+
+
+        #rightbox>div:nth-of-type(2){
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: start;
+        }
+
+        #below{
+           background-color: black;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        img{
+            padding:50px 150px ;
+            max-width:200px;
+            height: auto;
+        }
+
+        div.flag{
+            width: 20px;
+            height: 20px;
+            border: 2px solid;
+            border-radius: 50%;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-bz9lI_E-_WgPc643zMfllupi6P07Jj-cQ&s");
+            background-position: center;
+            background-size: cover
+    
+
+        }
+
+        #below>div:nth-of-type(1){
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        #below>div:nth-of-type(2){
+            width: 700px;
+            display: flex;
+            gap: 30px;
+            margin-right: 20px;
+            align-items: center;
+            color: white;
+            text-decoration: underline;
+        }
+
+
+        @media (width <= 700px) {
+
+            #container{
+
+                    display: flex;
+                    flex-direction:column-reverse;
+
+
+            }
+
+
+            #rightbox{
+                display: grid;
+                grid-template-columns: repeat(4 , 1fr);
+            }
+
+            #below>div:nth-of-type(1){
+                display: none;
+
+            }
+
+            #below>div:nth-of-type(2){
+                width: 100vw;
+
+            }
+
+            #logo{
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+
+
+    }
+
+
+    /* @media (width <= 750px) {
+
+#below{
+
+        display: flex;
+        flex-direction:column-reverse;
+        
+
+} */
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <footer>
+        <div id="container" class="A1">
+            <div id="logo"> 
+                <img src="image.png" alt="">
+            </div>
+           <div id="rightbox" class="A2">
+            <div>
+                <span>Shop</span>
+                <span>Gift cards</span>
+                <span>Etsy Registry</span>
+                <span>Sitemap</span>
+                <span>Etsy blog</span>
+                <span>Etsy United Kingdom</span>
+                <span>Etsy Germany</span>
+                <span>Etsy Canada</span>
+            </div>
+            <div>
+                <span style="margin-top: 15px;">Sell</span>
+                <span>Sell on Etsy</span>
+                <span>Teams</span>
+                <span>Forums</span>
+                <span>Affiliates & Creators</span>
+
+
+            </div>
+            <div>
+                <span>About</span>
+                <span>Etsy, Inc.</span>
+                <span>Policies</span>
+                <span>Investors</span>
+                
+                <span>Careers</span>
+                <span>Press</span>
+                <span>Impact</span>
+                <span>Legal imprint</span>
+
+                
+
+            </div>
+            <div>
+                <span>Shop</span>
+                <span>Gift cards</span>
+                <span>Etsy Registry</span>
+                <span>Sitemap</span>
+                <span>Etsy blog</span>
+                <span>Etsy United Kingdom</span>
+                <span>Etsy Germany</span>
+                <span>Etsy Canada</span>
+            </div>
+        </div >
+
+        </div>
+           
+        <div id="below" class="A3">
+            <div>
+                <div class="flag"></div>
+                <span>India</span>
+                <span> | </span>
+                
+                <span>English (IN)</span>
+                <span>|</span>
+                <span>₹ (INR)</span>
+            </div>
+            <div>
+                <span>&copy 2024 Etsy, Inc.</span>
+                <span>Terms of Use </span>
+                <span>Privacy.</span>
+                <span>Interest-based ads</span>
+                <span>Local Shops</span>
+                <span>Regions</span>
+                
+            </div>
+
+        </div>
+
+
+    </footer>
+</body>
+</html>
+  
+
+  
+
+
+
